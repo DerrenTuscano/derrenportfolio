@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derren's Portfolio - Projects</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html" class="name-logo" data-aos="fade-up">DT</a>
+      </header>
+      <main class="content">
+        <h1 data-aos="fade-up" style="text-align: center;">My Projects</h1>
+        
+        <div class="projects-container" style="text-align: center;">
+          <div class="projects-grid" data-aos="fade-up">
+            <!-- Portfolio Project 1 -->
+            <div class="project-card">
+              <h2>Inventory System</h2>
+              <p>A comprehensive inventory management system designed to track products, manage stock levels, and generate reports.</p>
+              <div class="tech-stack">
+                <span>Php</span>
+                <span>Database</span>
+                <span>CRUD Operations</span>
+                <span>GUI</span>
+              </div>
+              <a href="https://github.com/DerrenTuscano/InventorySystem" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+            
+            <!-- Portfolio Project 2 -->
+            <div class="project-card">
+              <h2>Touring Project</h2>
+              <p>A travel planning and tour management application that helps users organize trips and discover destinations.</p>
+              <div class="tech-stack">
+                <span>Web Development</span>
+                <span>Frontend</span>
+                <span>UX/UI</span>
+                <span>Maps Integration</span>
+              </div>
+              <a href="https://github.com/DerrenTuscano/touring-project" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="more-projects" data-aos="fade-up">
+          <h2>Looking to Expand My Portfolio</h2>
+          <p>I'm currently working on new projects and exploring technologies including:</p>
+          <div class="tech-interests">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Cloud Computing</span>
+            <span>Mobile Development</span>
+          </div>
+        </div>
+        
+        <nav>
+          <a href="index.html" data-aos="fade-up">Home</a>
+          <a href="contact.html" data-aos="fade-up">Contact</a>
+        </nav>
+      </main>
+      <footer>
+        2025 &copy; Derren Tuscano
+      </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+      AOS.init({
+          once: true,
+          delay: 0
+      });
+    </script>
+    <!-- Add our custom JavaScript file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

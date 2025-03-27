@@ -1,0 +1,219 @@
+.contact-info {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-item {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-item h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  margin-bottom: 0;
+}
+
+/* Update the contact items to handle links better */
+.contact-item a {
+  color: #0077B5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.contact-item a:hover {
+  color: #004d73;
+  background-color: rgba(0, 119, 181, 0.1);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-notice {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.availability {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.availability h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.availability ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.availability li {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .availability ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .container .content nav {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .container .content nav a {
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5rem auto;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.social a:hover {
+  background-color: #333;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Add a class for the logo link to ensure proper behavior */
+header .name-logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add specific styles for the home button in contact page */
+.home-btn {
+  background-color: #005a00 !important;
+  color: white !important;
+  font-weight: bold;
+  border: none !important;
+  outline: 2px solid #005a00 !important;
+}
+
+.home-btn:hover {
+  background-color: #004500 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make navigation more prominent */
+.container .content nav {
+  margin-top: 3rem !important;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
