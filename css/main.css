@@ -322,6 +322,33 @@ body {
   }
 }
 
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .resume-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    /* Maintain proper spacing */
+    margin: 5px;
+  }
+  
+  .resume-btn i {
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+  
+  /* Adjust nav spacing if needed */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    margin: 5px;
+  }
+}
+
+/* For very small screens */
 @media screen and (max-width: 480px) {
   .container {
     padding: 2rem 1rem 6rem;
@@ -344,6 +371,11 @@ body {
   
   .name-logo {
     font-size: 1.8rem;
+  }
+
+  .resume-btn {
+    font-size: 0.85rem;
+    padding: 6px 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
