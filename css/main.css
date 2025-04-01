@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  background: url("../img/plant.png");
+  background: url("/derrenportfolio/img/plant.png");
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 35rem;
